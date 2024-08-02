@@ -1,0 +1,58 @@
+/* Navbar CSS */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar is above other content */
+  background-color: #0e0d0d; 
+  color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80px; /* Set a fixed height for the navbar */
+}
+
+/* Add top padding to the body or main content container to accommodate the navbar height */
+body {
+  margin: 0; /* Remove default margin */
+  padding-top: 80px; /* Match this with the navbar's height */
+}
+
+/* Navbar left section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 30px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+}
+
+.navbar-menu li .navbar-link {
+  color: #f07007c9;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+nav ul li .navbar-link:hover {
+  color: #e6d3d3;
+  font-weight: bold;
+}
